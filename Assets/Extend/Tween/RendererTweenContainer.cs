@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Extend.Tween {
+namespace Extend.Tweens {
 	public class RendererTweenContainer : TweenContainer {
 		[SerializeField]
 		private Renderer m_renderer;

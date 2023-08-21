@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Extend.Tween {
+namespace Extend.Tweens {
 	public class TweenContainer : MonoBehaviour {
 		
 	}

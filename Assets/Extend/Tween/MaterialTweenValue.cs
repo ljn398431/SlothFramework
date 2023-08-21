@@ -2,7 +2,7 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 
-namespace Extend.Tween {
+namespace Extend.Tweens {
 	public interface IMaterialTweenSetup {
 		void Setup(Material material, MaterialPropertyBlock block);
 	}

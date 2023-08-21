@@ -2,7 +2,7 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 
-namespace Extend.Tween {
+namespace Extend.Tweens {
 	public interface ITweenValue {
 		void Play();
 
