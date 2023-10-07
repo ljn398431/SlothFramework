@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using Extend.Common;
 using UnityEngine;
+#if ADDRESSABLES
 using UnityEngine.AddressableAssets;
+#endif
 using UnityEngine.Assertions;
 
 namespace Extend.Asset {
@@ -98,7 +100,7 @@ namespace Extend.Asset {
 					asset.Destroy();
 				}
 			}
-			Addressables.Shutdown();
+			// Addressables.Shutdown();
 #endif
 			m_assets.Clear();
 			m_hashAssetDic.Clear();

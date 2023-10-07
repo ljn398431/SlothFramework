@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using Extend.Common;
 using UnityEngine;
+#if ADDRESSABLES
 using UnityEngine.ResourceManagement.AsyncOperations;
+#endif
 using XLua;
 
 namespace Extend.Asset {
