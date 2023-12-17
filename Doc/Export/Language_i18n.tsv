@@ -1,0 +1,8 @@
+id	cn
+string	string
+text:main_panel_title	<size=28>%02d:%02d</size>\n%s月%s日 %s\n%s
+text:weather_sunny	晴朗无风
+text:back_island	返回%s?
+text:network_reconnect	网络连接失败，请检查您的网络设置后重新连接
+text:broadcast	欢迎参观数字人大屏
+text:defaultcolor	0a0a0a

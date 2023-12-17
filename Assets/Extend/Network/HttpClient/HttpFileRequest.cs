@@ -112,10 +112,18 @@ namespace Extend.Network.HttpClient {
 		private IEnumerator DoRequestFile(string uri, Action<string> callback, bool isTextFile) {
 			var isRemoteFile = LocalFileCheck(uri, out string formatPath);
 			m_request = UnityWebRequest.Get(formatPath);
+			m_request.timeout = 25;
 			yield return m_request.SendWebRequest();
+			if(m_request.error!= null) {
+				Debug.LogWarning($"Download file {m_request.url} failed, reason : {m_request.error}");
+				m_request = null;
+				callback(null);
+				yield break;
+			}
 			FileDownloadPostProcess(isRemoteFile);
 			if( m_request == null ) {
 				callback(null);
+				Debug.LogWarning("m_request is null");
 				yield break;
 			}
 

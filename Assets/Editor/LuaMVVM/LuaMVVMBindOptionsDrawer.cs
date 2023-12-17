@@ -149,8 +149,10 @@ namespace Extend.LuaMVVM.Editor {
 						}
 						else if (typ == typeof(LuaBindingClickLongTapEvent))
 						{
-							names.Add("OnClick");
+							names.Add("OnClickShot");
 							names.Add("OnLongTap");
+							names.Add("OnClickEnd");
+							names.Add("OnClickDown");
 						}
 						else if( typ == typeof(LuaBindingDragEvent) ) {
 							names.Add("OnBeginDrag");

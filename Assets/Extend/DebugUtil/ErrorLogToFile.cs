@@ -24,10 +24,18 @@ namespace Extend.DebugUtil {
 
 		public void Initialize() {
 			m_cancelToken = m_cancelTokenSource.Token;
+			#if UNITY_STANDALONE_WIN && !UNITY_EDITOR
+			m_errorLogPath = Directory.GetParent(Application.dataPath) + "/error.log";
+			#else
 			m_errorLogPath = Application.persistentDataPath + "/error.log";
+#endif
 			try {
 				if( File.Exists(m_errorLogPath) ) {
-					m_lastErrorLogPath = Application.persistentDataPath + "/last-error.log";
+#if UNITY_STANDALONE_WIN && !UNITY_EDITOR
+					m_lastErrorLogPath = Directory.GetParent(Application.dataPath) + "/last_error.log";
+#else
+					m_lastErrorLogPath = Application.persistentDataPath + "/last_error.log";
+#endif
 					if( File.Exists(m_lastErrorLogPath) ) {
 						File.Delete(m_lastErrorLogPath);
 					}

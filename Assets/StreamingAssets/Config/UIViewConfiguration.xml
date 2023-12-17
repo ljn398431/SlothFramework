@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configurations>
+  <UIView Name="ChatPanel" UIView="eae55e95821d5524ab59468af34e22de" BackgroundFx="" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="DigitalLogin" UIView="21cfc49a4378eeb4dbff0eb956352cdd" BackgroundFx="ba5bb258018022343b21ec12bfdaeb90" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="ChatPanel_02" UIView="9b3ddf2d2e22e434ab71544b7eef9869" BackgroundFx="" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="Login" UIView="444a269366faa1b419f9ddb4df32982a" BackgroundFx="" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="Main" UIView="7886d1c5590d8dc42ac1f84d95f8e990" BackgroundFx="" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="Info" UIView="ff8307acc98bff845af09d0e13af27f6" BackgroundFx="ba5bb258018022343b21ec12bfdaeb90" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="Outside" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="Joystick" UIView="dbc939122fc92d740bbaaaeed9c82c8c" BackgroundFx="" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="NickSetting" UIView="bbc2ad67efb3bc44fa6209ca5b6d68b5" BackgroundFx="ba5bb258018022343b21ec12bfdaeb90" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="ChangeCloth" UIView="14cfa0a2d1fa5944699e4866de28df6b" BackgroundFx="" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="None" CloseButtonPath="" FrameRate="60" />
+  <UIView Name="IotPanel" UIView="4e26b07aa3a07934bbf2ea7e12c34f5f" BackgroundFx="ba5bb258018022343b21ec12bfdaeb90" FullScreen="0" Transition="" AttachLayer="Popup" CloseMethod="Button" CloseButtonPath="ButtonClosePanel" FrameRate="60" />
+</Configurations>

@@ -9,7 +9,7 @@ namespace Extend.UI {
 
 		private void Awake() {
 			var scaler = GetComponent<CanvasScaler>();
-			if( Screen.orientation == ScreenOrientation.Portrait ) {
+			if( Screen.orientation != ScreenOrientation.Portrait ) {
 				scaler.matchWidthOrHeight = Mathf.Clamp01(( Screen.width / (float)Screen.height - MinAspect ) / ( MaxAspect - MinAspect ));
 			}
 			else {

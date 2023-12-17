@@ -10,8 +10,12 @@ namespace Extend.LuaBindingEvent {
 	{
 		[ReorderList, LabelText("On Long Tap ()"), SerializeField]
 		private BindingEvent[] m_longTapEvent;
-		[ReorderList, LabelText("On Click ()"), SerializeField]
+		[ReorderList, LabelText("On Shot Click  Up()"), SerializeField]
 		private BindingEvent[] m_clickEvent;
+		[ReorderList, LabelText("On Click Up()"), SerializeField]
+		private BindingEvent[] m_clickUpEvent;
+		[ReorderList, LabelText("On Click Down()"), SerializeField]
+		private BindingEvent[] m_clickDownEvent;
 		public float LongTapTime = 1f;
 		public ScrollRect ScrollRect;
 		float m_downTime;
@@ -29,14 +33,19 @@ namespace Extend.LuaBindingEvent {
 		public void OnPointerDown(PointerEventData eventData)
 		{
 			m_downTime = Time.time;
+			TriggerPointerEvent("OnClickDown", m_clickDownEvent, eventData);
 			m_down = true;
 		}
 		public void OnPointerUp(PointerEventData eventData)
 		{
-			if (!m_down && !eventData.dragging) return;
 			if (Time.time - m_downTime < LongTapTime)
 			{
-				TriggerPointerEvent("OnClick", m_clickEvent, eventData);
+				TriggerPointerEvent("OnClickShot", m_clickEvent, eventData);
+				m_down = false;
+			}
+			else
+			{
+				TriggerPointerEvent("OnClickEnd", m_clickUpEvent, eventData);
 				m_down = false;
 			}
 		}

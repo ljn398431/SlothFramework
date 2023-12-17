@@ -1,0 +1,20 @@
+{
+    "files": [
+        "AvatarConfig_Server.tsv",
+        "FaceCreation_Server.tsv",
+        "MapData_Server.tsv",
+        "ModelCreation_Server.tsv",
+        "RespawnPoint_Server.tsv",
+        "Terrestrial.tsv",
+        "AITalkNavi_Server.tsv",
+        "AIShowNavi_Server.tsv",
+        "constParam_Server.tsv",
+        "EquipmentBase_Server.tsv",
+        "EquipmentBundle_Server.tsv"
+
+    ],
+    "source_folder": "../../Export",
+    "desc_folder": "../../Outputs",
+    "blob_folder": "Maps/",
+    "prod": false
+}   

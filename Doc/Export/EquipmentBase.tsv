@@ -1,0 +1,16 @@
+id	EquipmentName	Icon	EquipmentPrefabName	Style	Gender	EquipmentType	EquipmentLocation	Take
+string	string	string	string	number	string	number	string	string
+F01Z01T001	默认头		Head/F01Z01T001.prefab	1	1	1000	head	2
+F01Z02T001	默认头		Head/F01Z02T001.prefab	1	2	1000	head	2
+F01Z01S001	默认服饰	Icon_F01Z01S001_1	Coat/F01Z01S001.prefab	1	1	2	coat	2
+F01Z02S001	默认服饰	Icon_F01Z02S001_1	Coat/F01Z02S001.prefab	1	2	2	coat	2
+F01Z01S001_2	默认服饰颜色2	Icon_F01Z01S001_2	Coat/F01Z01S001_2.prefab	1	1	2	coat	2
+F01Z02S001_2	默认服饰颜色2	Icon_F01Z02S001_2	Coat/F01Z02S001_2.prefab	1	2	2	coat	2
+F01Z01S002_1	默认服饰颜色3	Icon_F01Z01S002_1	Coat/F01Z01S002_1.prefab	1	1	2	coat	2
+F01Z02S002_1	默认服饰颜色3	Icon_F01Z02S002_1	Coat/F01Z02S002_1.prefab	1	2	2	coat	2
+F01Z01S002_4	默认服饰颜色4	Icon_F01Z01S002_4	Coat/F01Z01S002_4.prefab	1	1	2	coat	2
+F01Z02S002_4	默认服饰颜色4	Icon_F01Z02S002_4	Coat/F01Z02S002_4.prefab	1	2	2	coat	2
+F01Z01H001	默认头发	Icon_F01Z01H001	Hair/F01Z01H001.prefab	1	1	1	hair	2
+F01Z02H001	默认头发	Icon_F01Z02H001	Hair/F01Z02H001.prefab	1	2	1	hair	2
+F01Z01H002	头发02	Icon_F01Z01H002	Hair/F01Z01H002.prefab	1	1	1	hair	2
+F01Z02H002	头发02	Icon_F01Z02H002	Hair/F01Z02H002.prefab	1	2	1	hair	2

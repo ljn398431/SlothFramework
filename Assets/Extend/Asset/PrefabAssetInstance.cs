@@ -1,10 +1,8 @@
 ﻿using System;
 using Extend.Common;
 using UnityEngine;
-#if ADDRESSABLES
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-#endif
 using Object = UnityEngine.Object;
 
 namespace Extend.Asset {

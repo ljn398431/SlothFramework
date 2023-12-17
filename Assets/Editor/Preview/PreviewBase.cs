@@ -134,6 +134,11 @@ namespace Extend.Editor.Preview {
 			}
 		}
 
+		public PreviewBase()
+		{
+			
+		}
+
 		public override void Initialize(Object[] targets) {
 			base.Initialize(targets);
 

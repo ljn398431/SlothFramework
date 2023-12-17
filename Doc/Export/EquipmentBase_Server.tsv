@@ -1,0 +1,11 @@
+EquipmentName	Icon	Style	Gender	EquipmentType	EquipmentLocation	Take	Free	start	vanish	ImageName	ExtendName
+string	string	string	string	string	string	string	string	string	string	string	string
+默认眼睛	Icon_102_%s_%s_01_001_01	1	2	1	Sllot_head_01	2	1	1	0		
+默认发型	Icon_102_%s_%s_02_001_01	1	2	2	Sllot_head_01	2	1	1			
+散发	Icon_102_%s_%s_02_002_01	1	2	2	Sllot_head_01	2	1	2			
+默认服饰	Icon_102_%s_%s_03_001_01	1	2	3		2	1	1			
+健身服	Icon_102_%s_%s_03_002_01	1	2	3		2	1	2			
+默认帽子	Icon_102_%s_%s_04_001_01	1	2	4	Sllot_head_01	1	1	1			
+时尚帽	Icon_102_%s_%s_04_002_01	1	2	4	Sllot_head_01	1	1	2			
+默认眼镜	Icon_102_%s_%s_05_001_01	1	2	5	Sllot_head_01	1	1	1			
+时尚墨镜	Icon_102_%s_%s_05_002_01	1	2	5	Sllot_head_01	1	1	2			

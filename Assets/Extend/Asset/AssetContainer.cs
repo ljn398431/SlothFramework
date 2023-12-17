@@ -2,9 +2,7 @@ using System;
 using System.Collections.Generic;
 using Extend.Common;
 using UnityEngine;
-#if ADDRESSABLES
 using UnityEngine.AddressableAssets;
-#endif
 using UnityEngine.Assertions;
 
 namespace Extend.Asset {

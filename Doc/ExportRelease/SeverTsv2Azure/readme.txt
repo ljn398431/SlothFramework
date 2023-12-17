@@ -1,0 +1,2 @@
+source_folder 填写tsv存储的文件夹
+desc_folder 填写json存储的文件夹

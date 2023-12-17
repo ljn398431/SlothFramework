@@ -1,0 +1,4 @@
+id	animations	overrides
+string	json	json
+maleMove	["male_move_idle_01.anim","male_move_walk_01.anim","male_move_run_01.anim","male_move_idle_01.anim"]	["MoveIdle","MoveWalk","MoveRun","Idle1"]
+femaleMove	["female_move_idle_01.anim","female_move_walk_01.anim","female_move_run_01.anim","female_move_idle_01.anim"]	["MoveIdle","MoveWalk","MoveRun","Idle1"]

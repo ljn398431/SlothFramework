@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using Extend.Asset;
 using Extend.Common;
 using UnityEngine;
@@ -48,6 +49,8 @@ namespace Extend.LuaMVVM {
 								m_items.Add(mvvm);
 							}
 							m_loadContexts.RemoveSwap(context);
+							GlobalCoroutineRunnerService.Get().StartCoroutine(SnapToCoroutine(m_scroll, go.transform as RectTransform));
+							// SnapTo(m_scroll, go.transform as RectTransform);
 						};
 						m_loadContexts.Add(context);
 					}
@@ -63,7 +66,41 @@ namespace Extend.LuaMVVM {
 					Recycle(m_items[last]);
 					m_items.RemoveAt(last);
 				}
+				// if(m_scroll.gameObject.activeInHierarchy)
+				// 	m_scroll.StartCoroutine(AutoScroll());
+				
 			}
+		}
+
+		private IEnumerator SnapToCoroutine(ScrollRect scrollRect, RectTransform target)
+		{
+			yield return null;
+			SnapTo(scrollRect,target);
+		}
+		
+		
+		public void SnapTo(ScrollRect scrollRect, RectTransform target)
+		{
+			Canvas.ForceUpdateCanvases();
+			// bool isElementInContent = scrollRect.viewport.rect.Contains(target.rect.position);
+			Vector3 elementWorldPos = target.TransformPoint(target.rect.center);
+			bool isElementInContent = RectTransformUtility.RectangleContainsScreenPoint(scrollRect.viewport, elementWorldPos);
+			Debug.Log($"SnapTo isElementInContent:{isElementInContent}");
+    
+			if (!isElementInContent)
+			{
+				var anchor = (Vector2)scrollRect.transform.InverseTransformPoint(scrollRect.content.position)
+				             - (Vector2)scrollRect.transform.InverseTransformPoint(target.position);
+				anchor.x = scrollRect.content.anchoredPosition.x;
+				scrollRect.content.anchoredPosition = anchor;
+			}
+		}
+		private IEnumerator AutoScroll()
+		{
+			LayoutRebuilder.ForceRebuildLayoutImmediate(m_scroll.content);
+			yield return new WaitForEndOfFrame();
+			m_scroll.verticalNormalizedPosition = 0;
+			m_scroll.normalizedPosition = new Vector2(0, 0);
 		}
 
 		private static void Recycle(IMVVMDetach mvvm) {
